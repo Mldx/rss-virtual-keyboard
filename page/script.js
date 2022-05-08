@@ -568,7 +568,7 @@ document.addEventListener('keydown', (e) => {
 
 const pushKeys = Array.from(keys).filter((value) => value.innerHTML.length <= 1);
 pushKeys.forEach((value) => {
-    value.addEventListener('click', () => {
+    value.addEventListener('mousedown', () => {
         if (value.innerHTML === ' ') {
             insertAtCursor(value.innerHTML);
         } else {
