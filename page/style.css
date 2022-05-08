@@ -123,4 +123,10 @@ body {
   line-height: 120%;
 }
 
+br {
+  display: block;
+  content: "";
+  margin-top: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */
