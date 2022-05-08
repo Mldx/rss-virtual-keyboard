@@ -728,7 +728,7 @@ document.addEventListener('keyup', (e) => {
 });
 
 document.addEventListener('mousedown', (e) => {
-  if (e.target.dataset.id === '16' && !e.shiftKey) {
+  if (e.target.dataset.id === '16' && !e.shiftKey && keys[1].innerText === '1') {
     keys.forEach((element, i) => {
       const el = element;
       if ((el.innerText.charCodeAt(0) >= 97 && el.innerText.charCodeAt(0) <= 122)
