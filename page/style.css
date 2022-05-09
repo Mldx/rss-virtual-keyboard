@@ -1,0 +1,132 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #ececec;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 864px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.wrapper .title {
+  user-select: none;
+  font-size: 4rem;
+  text-align: center;
+  color: #0e153a;
+  margin: 30px 0 0 0;
+  display: block;
+}
+.wrapper .textArea {
+  max-width: 100%;
+  min-width: 100%;
+  padding: 7px;
+  width: 864px;
+  height: 200px;
+  min-height: 100px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(14, 21, 58, 0.6117647059) 0 0 9px 2px;
+}
+.wrapper .textArea:focus-visible {
+  outline: transparent;
+  -moz-appearance: none;
+}
+.wrapper .keyboardBox {
+  user-select: none;
+  width: 864px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  background: linear-gradient(45deg, rgba(35, 47, 113, 0.84), rgba(82, 41, 41, 0.89), rgba(21, 101, 130, 0.85));
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.5215686275) 3px 3px;
+}
+.wrapper .keyboardBox .key {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.5215686275) 2px 2px 3px;
+  height: 50px;
+  width: 50px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: rgba(255, 255, 255, 0.3) 1px solid;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: background 0.2s, border-radius 0.2s, box-shadow 0.3s, transform 50ms;
+}
+.wrapper .keyboardBox .key:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+.wrapper .keyboardBox .key:active {
+  box-shadow: none;
+  border: none;
+  transform: scale(0.97);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.wrapper .keyboardBox .bigKey {
+  width: 116px;
+}
+.wrapper .keyboardBox .middleKey {
+  width: 106px;
+}
+.wrapper .keyboardBox .tabKey {
+  width: 60px;
+}
+.wrapper .keyboardBox .spaceKey {
+  font-size: 0;
+  width: 396px;
+}
+
+.capslock {
+  text-transform: uppercase;
+}
+
+.key_Capslock {
+  position: relative;
+}
+
+.capslockKeyIndicator {
+  box-shadow: transparent 0 0 5px 1px;
+  background-color: transparent;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  top: 8px;
+  left: 8px;
+  transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.capslockKeyIndicatorON {
+  box-shadow: #9aff78 0 0 5px 1px;
+  background-color: #9aff78;
+}
+
+.description {
+  user-select: none;
+  text-align: center;
+  font-size: 2.2rem;
+  width: fit-content;
+  margin: 0 auto;
+  line-height: 120%;
+}
+
+br {
+  display: block;
+  content: "";
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
